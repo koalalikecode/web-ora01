@@ -227,7 +227,7 @@ h3 {
   position: relative;
   padding-left: 15px;
   display: block;
-  background: url("/Content/Images/right-arrow.png") no-repeat 0 16px;
+  background: url("./Content/Images/right-arrow.png") no-repeat 0 16px;
 }
 /*--------------------------------------------MainContent*/
 .MainContentTitle {
@@ -341,7 +341,7 @@ h3 {
 .footerMain {
   width: 100%;
   float: left;
-  background: url("Content/Images/footer.jpg") no-repeat top;
+  background: url("./Content/Images/footer.jpg") no-repeat top;
   height: 100px;
 }
 .footerMain a {
