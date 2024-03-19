@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="/style3.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>CTTBK &#149; MainPage</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.css" /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="Content/bootstrap/css/bootstrap-combobox.css"
+    /> -->
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/Content/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="/Content/bootstrap/js/bootstrap-combobox.js"></script> -->
+    <!-- <script src="/Content/bootstrap/js/validator.min.js"></script> -->
+  </head>
+  <body id="ctl00_ctl00_Body">
+    <div id="aspnetForm">
+      <div class="aspNetHidden">
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input
+          type="hidden"
+          name="__EVENTARGUMENT"
+          id="__EVENTARGUMENT"
+          value=""
+        />
+        <input
+          type="hidden"
+          name="__VIEWSTATE"
+          id="__VIEWSTATE"
+          value="/wEPDwUKLTE0MTYzNjEwNw9kFgJmD2QWAmYPZBYCAgMPZBYCAgEPZBYIAgEPPCsACAEADxYCHg5fIVVzZVZpZXdTdGF0ZWdkFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCAgEPPCsABAEADxYCHg9EYXRhU291cmNlQm91bmRnZGQCAw88KwAIAQAPFgIfAGdkFgJmD2QWAgIBD2QWAmYPZBYEZg9kFgJmD2QWAgIBDzwrAAoBAA8WAh8AZ2RkAgEPZBYCZg9kFgJmD2QWAgIBDzwrAAoBAA8WBB8AZx8BZ2RkAgUPPCsACAEADxYCHwBnZGQCBw88KwAIAQAPFgIfAGdkFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCAgEPZBYEAgMPPCsACAEADxYCHwBnZBYCZg9kFgICAQ9kFgJmD2QWAmYPZBYCAgEPFgIeBFRleHQF5xo8ZGl2IGNsYXNzPSJsMzljb250ZW50TGVmdCI+PGRpdiBjbGFzcz0ibDM5TGVmdE1haW4iPjxoMz48aW1nIHNyYz0iLi4vQ29udGVudC9JbWFnZXMvdXNlcmljb24ucG5nIiBzdHlsZT0id2lkdGg6MzBweDtoZWlnaHQ6MzBweDtib3JkZXItcmFkaXVzOiA1MCU7Ij4gTmd1eeG7hW4gVHLhu41uZyBEdXk8L2gzPjx1bCBjbGFzcz0ic2l0ZU1hcCI+PGxpPjxhIGhyZWY9Ii4uL0FjY291bnQvTmV3c0ZlZWQuYXNweCI+VGjGsCBiw6FvIDxzcGFuIGNsYXNzPSJiYWRnZSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IzlDMTAxMDsiPjA8L3NwYW4+PC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4uL0FjY291bnQvQ2hhbmdlUGFzc3dvcmQuYXNweCI+xJDhu5VpIG3huq10IGto4bqpdTwvYT48L2xpPjxsaT48YSBocmVmPSJodHRwczovL2N0dC5odXN0LmVkdS52bi9hY2NvdW50L3Jlc2V0cGFzc3dvcmQiPkPhuqVwIGzhuqFpIG3huq10IGto4bqpdSBFbWFpbCB0csaw4budbmc8L2E+PC9saT48bGk+PGEgaHJlZj0iLi4vQWNjb3VudC9Mb2dvdXQuYXNweCI+VGhvw6F0IMSRxINuZyBuaOG6rXA8L2E+PC9saT48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvZ2V0TmV3RW1haWxQYXNzd29yZC5hc3B4Ij5UaMO0bmcgdGluIG3huq10IGto4bqpdSBFbWFpbCBj4bqlcCBt4bubaTwvYT48L2xpPjxsaT48YSBocmVmPSIuLi90ZW1wL1hhY05oYW5Ub0toYWlZVGUuYXNweCI+WMOhYyBuaOG6rW4ga2hhaSBiw6FvIHkgdOG6vzwvYT48L2xpPjwvdWw+PC9kaXY+PC9kaXY+PGJyPjxkaXYgY2xhc3M9ImwzOWNvbnRlbnRMZWZ0Ij48ZGl2IGNsYXNzPSJsMzlMZWZ0TWFpbiI+PGgzPlF14bqjbiBsw70gaOG7kyBzxqEgc2luaCB2acOqbjwvaDM+PHVsIGNsYXNzPSJzaXRlTWFwIj48bGk+PGEgaHJlZj0iLi4vIj5UaMO0bmcgdGluIHNpbmggdmnDqm48L2E+PC9saT48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvdXBkYXRlU3R1ZGVudFByb2ZpbGVzLmFzcHgiPkPhuq1wIG5o4bqtdCB0aMO0bmcgdGluIGPDoSBuaMOibjwvYT48L2xpPjxsaT48YSBocmVmPSIuLi9TdHVkZW50cy9TdHVkZW50R3JvdXBJbmZvLmFzcHgiPlRow7RuZyB0aW4gbOG7m3Agc2luaCB2acOqbjwvYT48L2xpPjwvdWw+PC9kaXY+PC9kaXY+PGJyPjxkaXYgY2xhc3M9ImwzOWNvbnRlbnRMZWZ0Ij48ZGl2IGNsYXNzPSJsMzlMZWZ0TWFpbiI+PGgzPsSQw6BvIHThuqFvPC9oMz48dWwgY2xhc3M9InNpdGVNYXAiPjxsaSBjbGFzcz0iY29zdWIiPjxhIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKSI+Q2jGsMahbmcgdHLDrG5oIMSRw6BvIHThuqFvPC9hPjx1bCBjbGFzcz0ic3ViU2l0ZW1hcCI+PGxpPjxhIGhyZWY9Ii4uL1N0dWRlbnRzL1N0dWRlbnRQcm9ncmFtLmFzcHgiPkNoxrDGoW5nIHRyw6xuaCDEkcOgbyB04bqhbyBzaW5oIHZpw6puPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4uL3B1Yi9Db3Vyc2VMaXN0cy5hc3B4Ij5EYW5oIG3hu6VjIGjhu41jIHBo4bqnbjwvYT48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9ImNvc3ViIj48YSBocmVmPSJqYXZhc2NyaXB0OnZvaWQoMCkiPkvhur8gaG/huqFjaCBo4buNYyB04bqtcDwvYT48dWwgY2xhc3M9InN1YlNpdGVtYXAiPjxsaT48YSBocmVmPSIuLi9TdHVkZW50cy9Db3Vyc2VzUmVnaXN0ZXIuYXNweCI+xJDEg25nIGvDvSBo4buNYyBwaOG6p248L2E+PC9saT48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvVGltZXRhYmxlcy5hc3B4Ij5UaOG7nWkga2jDs2EgYmnhu4N1PC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4uL3B1Yi9DaGVja0NsYXNzUmVnaXN0ZXIuYXNweCI+VHJhIGPhu6l1IMSRxINuZyBrw70gbOG7m3AgY8OhYyBr4buzPC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0iY29zdWIiPjxhIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKSI+S+G6v3QgcXXhuqMgaOG7jWMgdOG6rXA8L2E+PHVsIGNsYXNzPSJzdWJTaXRlbWFwIj48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvVG9laWNNYXJrcy5hc3B4Ij5L4bq/dCBxdeG6oyB0aGkgVE9FSUM8L2E+PC9saT48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvU3R1ZGVudENvdXJzZU1hcmtzLmFzcHgiPkLhuqNuZyDEkWnhu4NtIGPDoSBuaMOibjwvYT48L2xpPjxsaT48YSBocmVmPSIuLi9TdHVkZW50cy9TdHVkZW50Q291cnNlR3JhZGUuYXNweCI+QuG6o25nIMSRaeG7g20gaOG7jWMgcGjhuqduPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4uL1N0dWRlbnRzL1N0dWRlbnRDaGVja0lucHV0R3JhZGVUZXJtLmFzcHgiPktp4buDbSB0cmEgbmjhuq1wIMSRaeG7g20ga+G7syBt4bubaSBuaOG6pXQ8L2E+PC9saT48L3VsPjwvbGk+PGxpIGNsYXNzPSJjb3N1YiI+PGEgaHJlZj0iamF2YXNjcmlwdDp2b2lkKDApIj7EkOG7kyDDoW4gLSBU4buRdCBuZ2hp4buHcDwvYT48dWwgY2xhc3M9InN1YlNpdGVtYXAiPjxsaT48YSBocmVmPSIuLi9TdHVkZW50cy9GaW5hbFByb2plY3RSZWdpc3RlclJlc3VsdC5hc3B4Ij5L4bq/dCBxdeG6oyB4w6l0IG5o4bqtbiDEkEFUTjwvYT48L2xpPjxsaT48YSBocmVmPSIuLi9TdHVkZW50cy9HcmFkdWF0ZVJlZ2lzdGVyLmFzcHgiPsSQxINuZyBrw70geMOpdCB04buRdCBuZ2hp4buHcDwvYT48L2xpPjwvdWw+PC9saT48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvVGltZXRhYmxlc1RlbXAuYXNweCI+VGjhu51pIGtow7NhIGJp4buDdSB04bqhbSB0aOG7nWk8L2E+PC9saT48L3VsPjwvZGl2PjwvZGl2Pjxicj48ZGl2IGNsYXNzPSJsMzljb250ZW50TGVmdCI+PGRpdiBjbGFzcz0ibDM5TGVmdE1haW4iPjxoMz5UxrAgduG6pW4gdHLhu7FjIHR1eeG6v248L2gzPjx1bCBjbGFzcz0ic2l0ZU1hcCI+PGxpPjxhIGhyZWY9Ii4uL1N0dWRlbnRzL1FBLmFzcHgiPkjhu49pIMSRw6FwIC0gVMawIHbhuqVuIHRy4buxYyB0dXnhur9uPC9hPjwvbGk+PC91bD48L2Rpdj48L2Rpdj48YnI+PGRpdiBjbGFzcz0ibDM5Y29udGVudExlZnQiPjxkaXYgY2xhc3M9ImwzOUxlZnRNYWluIj48aDM+VMOgaSBjaMOtbmggaOG7jWMgduG7pTwvaDM+PHVsIGNsYXNzPSJzaXRlTWFwIj48bGk+PGEgaHJlZj0iLi4vU3R1ZGVudHMvQ2hlY2tUdWl0aW9uLmFzcHgiPlRow7RuZyB0aW4gY8O0bmcgbuG7oyBo4buNYyBwaMOtPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4uL1N0dWRlbnRzL09ubGluZV9UdWl0aW9uUGF5LmFzcHgiPlRoYW5oIHRvw6FuIGjhu41jIHBow60gdHLhu7FjIHR1eeG6v248L2E+PC9saT48L3VsPjwvZGl2PjwvZGl2Pjxicj48ZGl2IGNsYXNzPSJsMzljb250ZW50TGVmdCI+PGRpdiBjbGFzcz0i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"
+        />
+      </div>
+      <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms["aspnetForm"];
+        if (!theForm) {
+          theForm = document.aspnetForm;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+          if (!theForm.onsubmit || theForm.onsubmit() != false) {
+            theForm.__EVENTTARGET.value = eventTarget;
+            theForm.__EVENTARGUMENT.value = eventArgument;
+            theForm.submit();
+          }
+        }
+        //]]>
+      </script>
+      <!-- <script
+        src="/WebResource.axd?d=4hDuIVz3xb6rsKgCYC7wfz8MYtTplyZJ5GD_tHfXvJymZyb5QyozCHqDm1kjw-RtahifkV6CfwYgn-tGSNikrRL-tez9Xlsb4C0LVnuB1HY1&amp;t=636862707087933587"
+        type="text/javascript"
+      ></script> -->
+      <div class="aspNetHidden">
+        <input
+          type="hidden"
+          name="__VIEWSTATEGENERATOR"
+          id="__VIEWSTATEGENERATOR"
+          value="CA0B0334"
+        />
+        <input
+          type="hidden"
+          name="__EVENTVALIDATION"
+          id="__EVENTVALIDATION"
+          value="/wEdAAKAP/I+pPeaeJu5OeUun1KZj5tKX17dUFcfPIfMhCjXaXmrjv1D4CFBvOznv/QQEJtA1KLuP+zFuCORV9uQObtH"
+        />
+      </div>
+      <div
+        id="ctl00_ctl00_HeaderPane_EB"
+        class="dxpnl-bar dxpnlControl_Mulberry headerPane"
+        style="
+          width: 100%;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        "
+      >
+        <div class="dxpnl-bar-tmpl dxpnl-np">
+          <div style="height: 50px">
+            <a href="http://ctt-daotao.hust.edu.vn/">
+              <img
+                class="dxeImage_Mulberry"
+                id="ctl00_ctl00_HeaderPane_EBT_imgLogo"
+                src="Content/Images/logo-cttdt.png"
+                alt=""
+                style="height: 100%"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dxpnlControl_Mulberry" id="ctl00_ctl00_HeaderPane">
+        <div class="dxpnl-acc">
+          <div class="headerPane">
+            <div class="container">
+              <a href="http://ctt-daotao.hust.edu.vn/">
+                <img
+                  class="dxeImage_Mulberry"
+                  id="ctl00_ctl00_HeaderPane_imgLogo"
+                  src="Content/Images/logo-cttdt.png"
+                  alt=""
+                  style="height: 100%"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="ctl00_ctl00_TopMenuPane_EB"
+        class="dxpnl-bar dxpnlControl_Mulberry topMenuExpandBar"
+      >
+        <div id="ctl00_ctl00_TopMenuPane_EBB" class="dxpnl-btn dxpnl-fp">
+          <img
+            id="ctl00_ctl00_TopMenuPane_EBBI"
+            class="dxWeb_pnlExpand_Mulberry"
+            src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="dxpnlControl_Mulberry topMenu" id="ctl00_ctl00_TopMenuPane">
+        <div class="dxpnl-acc">
+          <div class="dxpnl-cc">
+            <div class="dxmLite_Mulberry dxm-ltr">
+              <div
+                class="dxm-main dxm-horizontal dxm-autoWidth dxm-noWrap"
+                id="ctl00_ctl00_TopMenuPane_menuTop"
+                style="width: 100%"
+              >
+                <ul class="dx dxm-image-l">
+                  <li
+                    id="nav-1"
+                    class="dxm-item dxm-subMenu"
+                    style="font-size: Medium"
+                    onmouseover="handleHoverOnNav(`nav-1`, `ctl00_ctl00_TopMenuPane_menuTop_DXM0_`)"
+                    onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM0_`)"
+                  >
+                    <div class="dxm-content dxm-hasText" style="display: flex">
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText" style="flex-grow: 1"
+                        >Đào tạo Đại học</span
+                      >
+                      <div class="">
+                        <img
+                          class=""
+                          src="/Content/Images/down.png"
+                          alt="v"
+                          style="width: 5px"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dxm-spacing"></li>
+                  <li
+                    id="nav-2"
+                    class="dxm-item dxm-subMenu"
+                    style="font-size: Medium"
+                    onmouseover="handleHoverOnNav(`nav-2`,`ctl00_ctl00_TopMenuPane_menuTop_DXM1_`)"
+                    onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM1_`)"
+                  >
+                    <div class="dxm-content dxm-hasText" style="display: flex">
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText" style="flex-grow: 1"
+                        >Đào tạo Sau đại học</span
+                      >
+                      <div class="">
+                        <img
+                          class=""
+                          src="/Content/Images/down.png"
+                          alt="v"
+                          style="width: 5px"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dxm-spacing"></li>
+                  <li
+                    id="nav-3"
+                    class="dxm-item dxm-subMenu"
+                    style="font-size: Medium"
+                    onmouseover="handleHoverOnNav(`nav-3`,`ctl00_ctl00_TopMenuPane_menuTop_DXM2_`)"
+                    onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM2_`)"
+                  >
+                    <div class="dxm-content dxm-hasText" style="display: flex">
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText" style="flex-grow: 1"
+                        >Công tác Sinh viên</span
+                      >
+                      <div class="">
+                        <img
+                          class=""
+                          src="/Content/Images/down.png"
+                          alt="v"
+                          style="width: 5px"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dxm-spacing"></li>
+                  <li class="dxm-item dxm-noSubMenu">
+                    <a
+                      class="dxm-content dxm-hasText dx"
+                      href="http://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx"
+                      style="font-size: Medium"
+                    >
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText"
+                        >Tra cứu văn bằng</span
+                      >
+                    </a>
+                  </li>
+                  <li class="dxm-spacing dxm-amis"></li>
+                  <li
+                    class="dxm-item dxm-dropDownMode dxm-noImage dxm-ami"
+                    style="font-size: Medium"
+                  >
+                    <div class="dxm-content dxm-hasText">
+                      <span class="dx-vam dxm-contentText">Item</span>
+                    </div>
+                    <div class="dxm-popOut">
+                      <img
+                        class="dxWeb_mAdaptiveMenu_Mulberry dxm-pImage"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt="..."
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <b class="dx-clear"></b>
+              <div
+                id="ctl00_ctl00_TopMenuPane_menuTop_DXM0_"
+                style="z-index: 20002; display: none"
+                onmouseover="handleHoverOnNav(`nav-1`,`ctl00_ctl00_TopMenuPane_menuTop_DXM0_`)"
+                onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM0_`)"
+              >
+                <div class="dxm-shadow dxm-popup" style="font-size: Medium">
+                  <ul class="dx dxm-noImages dxm-gutter">
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=18"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Quy định - Quy chế</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=19"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Các ngành đào tạo</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=20"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Kế hoạch học tập</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=46"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Tin tức - Thông báo</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=30"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Thông tin văn bằng 2</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=29"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Chương tr &#236;nh đặc biệt</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=31"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Biểu mẫu</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=32"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Liên hệ</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="ctl00_ctl00_TopMenuPane_menuTop_DXM1_"
+                style="z-index: 20002; display: none"
+                onmouseover="handleHoverOnNav(`nav-2`,`ctl00_ctl00_TopMenuPane_menuTop_DXM1_`)"
+                onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM1_`)"
+              >
+                <div class="dxm-shadow dxm-popup" style="font-size: Medium">
+                  <ul class="dx dxm-noImages dxm-gutter">
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=47"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Tuyển sinh</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=48"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Đào tạo</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=41"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Mẫu văn bản giấy tờ</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=42"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Văn bản - Quy chế</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=43"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Thông tin văn bằng</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=44"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Trang thông tin cá nhân</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=45"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Liên hệ</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="ctl00_ctl00_TopMenuPane_menuTop_DXM2_"
+                style="z-index: 20002; display: none"
+                onmouseover="handleHoverOnNav(`nav-3`,`ctl00_ctl00_TopMenuPane_menuTop_DXM2_`)"
+                onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM2_`)"
+              >
+                <div class="dxm-shadow dxm-popup" style="font-size: Medium">
+                  <ul class="dx dxm-noImages dxm-gutter">
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=7"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Thông báo</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=9"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Hỏi - Đáp</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=53"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Học ph &#237;</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=11"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Học bổng tài trợ</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=12"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Việc làm</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=13"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Biểu mẫu</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=54"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Cựu sinh viên</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=15"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Liên hệ</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="ctl00_ctl00_TopMenuPane_menuTop_DXM4_"
+                style="z-index: 20000; display: none"
+              >
+                <div
+                  class="dxm-shadow dxm-popup dxm-am"
+                  style="font-size: Medium"
+                >
+                  <ul class="dx dxm-gutter"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dxpnl-expanded-tmpl">
+            <div class="dxmLite_Mulberry dxm-ltr">
+              <div
+                class="dxm-main dxm-vertical dxm-autoWidth dxm-noWrap"
+                id="ctl00_ctl00_TopMenuPane_ctl10_menuTop"
+                style="width: 100%"
+              >
+                <ul class="dx dxm-image-l dxm-gutter">
+                  <li class="dxm-item dxm-subMenu" style="font-size: Medium">
+                    <div class="dxm-content dxm-hasText">
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText"
+                        >Đào tạo Đại học</span
+                      >
+                    </div>
+                    <div class="dxm-popOut">
+                      <img
+                        class="dxWeb_mVerticalPopOut_Mulberry dxm-pImage"
+                        src="./Content/Images/down.png"
+                        alt=">"
+                        style="width: 4px"
+                      />
+                    </div>
+                    <b class="dx-clear"></b>
+                  </li>
+                  <li class="dxm-spacing"></li>
+                  <li class="dxm-item dxm-subMenu" style="font-size: Medium">
+                    <div class="dxm-content dxm-hasText">
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText"
+                        >Đào tạo Sau đại học</span
+                      >
+                    </div>
+                    <div class="dxm-popOut">
+                      <img
+                        class="dxWeb_mVerticalPopOut_Mulberry dxm-pImage"
+                        src="./Content/Images/down.png"
+                        alt=">"
+                        style="width: 4px"
+                      />
+                    </div>
+                    <b class="dx-clear"></b>
+                  </li>
+                  <li class="dxm-spacing"></li>
+                  <li class="dxm-item dxm-subMenu" style="font-size: Medium">
+                    <div class="dxm-content dxm-hasText">
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText"
+                        >Công tác Sinh viên</span
+                      >
+                    </div>
+                    <div class="dxm-popOut">
+                      <img
+                        class="dxWeb_mVerticalPopOut_Mulberry dxm-pImage"
+                        src="./Content/Images/down.png"
+                        alt=">"
+                        style="width: 4px"
+                      />
+                    </div>
+                    <b class="dx-clear"></b>
+                  </li>
+                  <li class="dxm-spacing"></li>
+                  <li class="dxm-item dxm-noSubMenu">
+                    <a
+                      class="dxm-content dxm-hasText dx"
+                      href="http://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx"
+                      style="font-size: Medium"
+                    >
+                      <img
+                        class="dxIcon_arrange_sendbackward_16x16 dxm-image dx-vam"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                      <span class="dx-vam dxm-contentText"
+                        >Tra cứu văn bằng</span
+                      >
+                    </a>
+                    <b class="dx-clear"></b>
+                  </li>
+                  <li class="dxm-spacing dxm-amis"></li>
+                  <li
+                    class="dxm-item dxm-dropDownMode dxm-noImage dxm-ami"
+                    style="font-size: Medium"
+                  >
+                    <div class="dxm-content dxm-hasText">
+                      <span class="dx-vam dxm-contentText">Item</span>
+                    </div>
+                    <div class="dxm-popOut">
+                      <img
+                        class="dxWeb_mAdaptiveMenu_Mulberry dxm-pImage"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt="..."
+                      />
+                    </div>
+                    <b class="dx-clear"></b>
+                  </li>
+                </ul>
+              </div>
+              <b class="dx-clear"></b>
+              <div
+                id="ctl00_ctl00_TopMenuPane_ctl10_menuTop_DXM0_"
+                style="z-index: 20002; display: none"
+              >
+                <div class="dxm-shadow dxm-popup" style="font-size: Medium">
+                  <ul class="dx dxm-noImages dxm-gutter">
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=18"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Quy định - Quy chế</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=19"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Các ngành đào tạo</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=20"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Kế hoạch học tập</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=46"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Tin tức - Thông báo</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=30"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Thông tin văn bằng 2</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=29"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Chương tr &#236;nh đặc biệt</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=31"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Biểu mẫu</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=32"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Liên hệ</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="ctl00_ctl00_TopMenuPane_ctl10_menuTop_DXM1_"
+                style="z-index: 20002; display: none"
+                onmouseover="handleHoverOnNav(`nav-2`,`ctl00_ctl00_TopMenuPane_ctl10_menuTop_DXM1_`)"
+                onmouseout="handleOutHoverOnNav(`ctl00_ctl00_TopMenuPane_menuTop_DXM1_`)"
+              >
+                <div class="dxm-shadow dxm-popup" style="font-size: Medium">
+                  <ul class="dx dxm-noImages dxm-gutter">
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=47"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Tuyển sinh</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=48"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Đào tạo</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=41"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Mẫu văn bản giấy tờ</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=42"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Văn bản - Quy chế</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=43"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Thông tin văn bằng</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=44"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Trang thông tin cá nhân</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=45"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Liên hệ</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="ctl00_ctl00_TopMenuPane_ctl10_menuTop_DXM2_"
+                style="z-index: 20002; display: none"
+              >
+                <div class="dxm-shadow dxm-popup" style="font-size: Medium">
+                  <ul class="dx dxm-noImages dxm-gutter">
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=7"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Thông báo</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=9"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Hỏi - Đáp</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=53"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Học ph &#237;</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=11"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Học bổng tài trợ</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=12"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Việc làm</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=13"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Biểu mẫu</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=54"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText"
+                          >Cựu sinh viên</span
+                        >
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                    <li class="dxm-spacing"></li>
+                    <li class="dxm-item">
+                      <a
+                        class="dxm-content dxm-hasText dx"
+                        href="http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=15"
+                        style="font-size: Medium"
+                      >
+                        <span class="dx-vam dxm-contentText">Liên hệ</span>
+                      </a>
+                      <b class="dx-clear"></b>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="ctl00_ctl00_TopMenuPane_ctl10_menuTop_DXM4_"
+                style="z-index: 20000; display: none"
+              >
+                <div
+                  class="dxm-shadow dxm-popup dxm-am"
+                  style="font-size: Medium"
+                >
+                  <ul class="dx dxm-gutter"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <script id="dxss_1845996416">
+
+        ASPx.AddHoverItems("ctl00_ctl00_TopMenuPane", [
+          [["dxpnl-btnHover"], [""], ["EBB"]],
+        ]);
+        ASPx.AddPressedItems("ctl00_ctl00_TopMenuPane", [
+          [["dxpnl-btnPressed"], [""], ["EBB"]],
+        ]);
+        ASPx.AddSelectedItems("ctl00_ctl00_TopMenuPane", [
+          [["dxpnl-expanded"], [""], ["", "EB"]],
+          [["dxpnl-btnSelected"], [""], ["EBB"]],
+        ]);
+        ASPx.createControl(ASPxClientPanel, "ctl00_ctl00_TopMenuPane", "", {
+          uniqueID: "ctl00$ctl00$TopMenuPane",
+          collapseWindowWidth: 600,
+          animationType: "slide",
+        });
+
+
+      </script> -->
+      <div
+        class="dxpnlControl_Mulberry breadCrumbPanel"
+        id="ctl00_ctl00_breadCrumbPane"
+      >
+        <div id="breadCrumb">
+          <ul class="breadCrumbList">
+            <li class="start cap1">
+              <a href="">Trang chủ</a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <table
+        class="dxpnlControl_Mulberry contentPanel"
+        id="ctl00_ctl00_contentPane"
+      >
+        <tr>
+          <td style="vertical-align: Top">
+            <script type="text/javascript">
+              $(document).ready(function () {
+                window.setTimeout(function () {
+                  $(".alert")
+                    .fadeTo(1000, 0)
+                    .slideUp(1000, function () {
+                      $(this).remove();
+                    });
+                }, 8000);
+              });
+            </script>
+            <div
+              style="
+                padding: 5px;
+                background-color: rgba(255, 0, 0, 0.4);
+                position: fixed;
+                width: 100%;
+                z-index: 9999;
+                top: 0px;
+                left: 0px;
+              "
+            ></div>
+            <table style="width: 100%">
+              <tr>
+                <td style="vertical-align: top; margin: 0px">
+                  <div
+                    id="ctl00_ctl00_contentPane_MainPanel_leftMenuPane_EB"
+                    class="dxpnl-bar dxpnlControl_Mulberry LeftMenuExpandBar"
+                  >
+                    <div
+                      id="ctl00_ctl00_contentPane_MainPanel_leftMenuPane_EBB"
+                      class="dxpnl-btn dxpnl-fp"
+                    >
+                      <img
+                        id="ctl00_ctl00_contentPane_MainPanel_leftMenuPane_EBBI"
+                        class="dxWeb_pnlExpand_Mulberry"
+                        src="https://ctt-sis.hust.edu.vn/DXR.axd?r=1_87-Yk9Cr"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="dxpnlControl_Mulberry leftMenuPanel"
+                    id="ctl00_ctl00_contentPane_MainPanel_leftMenuPane"
+                  >
+                    <div class="dxpnl-acc">
+                      <div style="width: 285px; padding-top: 10px">
+                        <div class="l39contentLeft">
+                          <div class="l39LeftMain">
+                            <h3>
+                              <img
+                                src="../Content/Images/usericon.png"
+                                style="
+                                  width: 30px;
+                                  height: 30px;
+                                  border-radius: 50%;
+                                "
+                              />Nguyễn Trọng Duy
+                            </h3>
+                            <ul class="siteMap">
+                              <li>
+                                <a href="../Account/NewsFeed.aspx">
+                                  Thư báo
+                                  <span
+                                    class="badge"
+                                    style="background-color: #9c1010"
+                                    >0</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="../Account/ChangePassword.aspx"
+                                  >Đổi mật khẩu</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://ctt.hust.edu.vn/account/resetpassword"
+                                  >Cấp lại mật khẩu Email trường</a
+                                >
+                              </li>
+                              <li>
+                                <a href="../Account/Logout.aspx"
+                                  >Thoát đăng nhập</a
+                                >
+                              </li>
+                              <li>
+                                <a href="../Students/getNewEmailPassword.aspx"
+                                  >Thông tin mật khẩu Email cấp mới</a
+                                >
+                              </li>
+                              <li>
+                                <a href="../temp/XacNhanToKhaiYTe.aspx"
+                                  >Xác nhận khai báo y tế</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="l39contentLeft">
+                          <div class="l39LeftMain">
+                            <h3>Quản lý hồ sơ sinh viên</h3>
+                            <ul class="siteMap">
+                              <li>
+                                <a href="../">Thông tin sinh viên</a>
+                              </li>
+                              <li>
+                                <a href="../Students/updateStudentProfiles.aspx"
+                                  >Cập nhật thông tin cá nhân</a
+                                >
+                              </li>
+                              <li>
+                                <a href="../Students/StudentGroupInfo.aspx"
+                                  >Thông tin lớp sinh viên</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="l39contentLeft">
+                          <div class="l39LeftMain">
+                            <h3>Đào tạo</h3>
+                            <ul class="siteMap">
+                              <li class="cosub">
+                                <a href="javascript:void(0)"
+                                  >Chương trình đào tạo</a
+                                >
+                                <ul class="subSitemap">
+                                  <li>
+                                    <a href="../Students/StudentProgram.aspx"
+                                      >Chương trình đào tạo sinh viên</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="../pub/CourseLists.aspx"
+                                      >Danh mục học phần</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="cosub">
+                                <a href="javascript:void(0)"
+                                  >Kế hoạch học tập</a
+                                >
+                                <ul class="subSitemap">
+                                  <li>
+                                    <a href="../Students/CoursesRegister.aspx"
+                                      >Đăng ký học phần</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="../Students/Timetables.aspx"
+                                      >Thời khóa biểu</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="../pub/CheckClassRegister.aspx"
+                                      >Tra cứu đăng ký lớp các kỳ</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="cosub">
+                                <a href="javascript:void(0)">Kết quả học tập</a>
+                                <ul class="subSitemap">
+                                  <li>
+                                    <a href="../Students/ToeicMarks.aspx"
+                                      >Kết quả thi TOEIC</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="../Students/StudentCourseMarks.aspx"
+                                      >Bảng điểm cá nhân</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="../Students/StudentCourseGrade.aspx"
+                                      >Bảng điểm học phần</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="../Students/StudentCheckInputGradeTerm.aspx"
+                                      >Kiểm tra nhập điểm kỳ mới nhất</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="cosub">
+                                <a href="javascript:void(0)"
+                                  >Đồ án - Tốt nghiệp</a
+                                >
+                                <ul class="subSitemap">
+                                  <li>
+                                    <a
+                                      href="../Students/FinalProjectRegisterResult.aspx"
+                                      >Kết quả xét nhận ĐATN</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="../Students/GraduateRegister.aspx"
+                                      >Đăng ký xét tốt nghiệp</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="../Students/TimetablesTemp.aspx"
+                                  >Thời khóa biểu tạm thời</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="l39contentLeft">
+                          <div class="l39LeftMain">
+                            <h3>Tư vấn trực tuyến</h3>
+                            <ul class="siteMap">
+                              <li>
+                                <a href="../Students/QA.aspx"
+                                  >Hỏi đáp - Tư vấn trực tuyến</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="l39contentLeft">
+                          <div class="l39LeftMain">
+                            <h3>Tài chính học vụ</h3>
+                            <ul class="siteMap">
+                              <li>
+                                <a href="../Students/CheckTuition.aspx"
+                                  >Thông tin công nợ học phí</a
+                                >
+                              </li>
+                              <li>
+                                <a href="../Students/Online_TuitionPay.aspx"
+                                  >Thanh toán học phí trực tuyến</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="l39contentLeft">
+                          <div class="l39LeftMain">
+                            <h3>Dịch vụ hành chính</h3>
+                            <ul class="siteMap">
+                              <li>
+                                <a
+                                  href="http://ctsv.hust.edu.vn/#/giay-to/xin-cap-giay"
+                                  >ĐK cấp giấy tờ</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td
+                  style="
+                    width: 100%;
+                    vertical-align: top;
+                    margin: 0px;
+                    padding: 10px;
+                  "
+                >
+                  <div class="MainContentTitle">
+                    <h3>CHỈNH SỬA THÔNG TIN CÁ NHÂN</h3>
+                    <hr />
+                  </div>
+                  <div class="MainContentTitle">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label for="name" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" id="name" />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="yearIn" class="form-label"
+                          >Năm vào trường</label
+                        >
+                        <input type="text" class="form-control" id="yearIn" />
+                      </div>
+                      <div class="col-md-2">
+                        <label for="sex" class="form-label">Giới tính</label>
+                        <select id="sex" class="form-select">
+                          <option value="" selected>Choose...</option>
+                          <option value="Nam">Nam</option>
+                          <option value="Nữ">Nữ</option>
+                          <option value="Khác">Khác</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="program" class="form-label"
+                          >Chương trình</label
+                        >
+                        <input type="text" class="form-control" id="program" />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="level" class="form-label"
+                          >Bậc Đào tạo</label
+                        >
+                        <input type="text" class="form-control" id="level" />
+                      </div>
+                      <div class="col-md-2">
+                        <label for="class" class="form-label">Lớp học</label>
+                        <input type="text" class="form-control" id="class" />
+                      </div>
+                      <div class="col-12">
+                        <label for="school" class="form-label"
+                          >Khoa/Viện quản lý</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="school"
+                          placeholder="Trường CNTT & TT"
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="status" class="form-label"
+                          >Tình trạng học tập</label
+                        >
+                        <select id="status" class="form-select">
+                          <option value="" selected>Choose...</option>
+                          <option value="Học">Học</option>
+                          <option value="Thôi học">Thôi học</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="course" class="form-label">Khóa học</label>
+                        <select id="course" class="form-select">
+                          <option value="" selected>Choose...</option>
+                          <option value="68">68</option>
+                          <option value="67">67</option>
+                          <option value="66">66</option>
+                          <option value="65">65</option>
+                          <option value="64">64</option>
+                          <option value="63">63</option>
+                        </select>
+                      </div>
+                      <div class="col-12">
+                        <button id="submit-btn" class="btn btn-primary">
+                          OK
+                        </button>
+                        <a href="/index.html" class="btn btn-secondary"
+                          >Cancel</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div id="btnBackToTop" class="btnBackToTop hidden">
+              <i class="glyphicon glyphicon-circle-arrow-up"></i>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <footer class="footer">
+        <div class="footerContent">
+          <div class="footerMain">
+            <div class="footerLeft"></div>
+            <div class="footerRight">
+              <hr />
+              <b>Trường Đại học Bách Khoa Hà Nội</b>
+              <br />
+              <br />
+              <p>Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script type="text/javascript">
+        function handleHoverOnNav(source, dest) {
+          const ele = document.getElementById(dest);
+          ele.classList.add("active");
+          ele.style.left = `${
+            document.getElementById(source).getBoundingClientRect().left
+          }px`;
+        }
+        function handleOutHoverOnNav(dest) {
+          document.getElementById(dest).classList.remove("active");
+        }
+
+        //]]>
+      </script>
+      <script type="text/javascript">
+        const name = document.getElementById("name");
+        const yearIn = document.getElementById("yearIn");
+        const sex = document.getElementById("sex");
+        const program = document.getElementById("program");
+        const level = document.getElementById("level");
+        const classValue = document.getElementById("class");
+        const school = document.getElementById("school");
+        const email = document.getElementById("email");
+        const status = document.getElementById("status");
+        const course = document.getElementById("course");
+
+        document.getElementById("submit-btn").onclick = (e) => {
+          const user = JSON.parse(localStorage.getItem("user"));
+          e.preventDefault();
+          localStorage.setItem(
+            "user",
+            JSON.stringify({
+              name: name.value || user?.name,
+              yearIn: yearIn.value || user?.yearIn,
+              sex: sex.value || user?.sex,
+              program: program.value || user?.program,
+              level: level.value || user?.level,
+              class: classValue.value || user?.class,
+              school: school.value || user?.school,
+              email: email.value || user?.email,
+              status: status.value || user?.status,
+              course: course.value || user?.course,
+            })
+          );
+          window.location.href = "/index.html";
+        };
+      </script>
+    </div>
+  </body>
+</html>
